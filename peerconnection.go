@@ -16,18 +16,6 @@ import (
 	"github.com/pion/webrtc/v4"
 )
 
-type AddStreamAction struct {
-	Type string `json:"type"`
-	Id   string `json:"id"`
-}
-
-type AddVideoTrackAction struct {
-	Type     string `json:"type"`
-	Id       string `json:"id"`
-	StreamId string `json:"stream_id"`
-	SrcId    string `json:"src"`
-}
-
 type PeerConnectionThread struct {
 	sendSDPChan       chan<- webrtc.SessionDescription
 	recvSDPChan       <-chan webrtc.SessionDescription
