@@ -2,7 +2,7 @@
 
 To run this:
 - Server, `go run .` it listen to 8080
-- Client, open https://vaporplay-client.3drx.top, fill in server url (for example http://<server-ip>:8080). Other options doesn't matter, click next and select the only "game" and connect.
+- Client, open https://vaporplay-client.3drx.top, fill in server url (for example http://\<server-ip\>:8080). Other options doesn't matter, click next and select the only "game" and connect.
 
 The problem:
 - When using FEC and NACK at the same time, by default the nack packets gets fec encoded, which is not how it's expected to work. This is fixed in this repo's interceptor/flexfec.
